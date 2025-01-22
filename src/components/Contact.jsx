@@ -44,7 +44,7 @@ const Contact = () => {
             </div>
           </div>
           <div className="flex-1 w-full">
-            <form className="space-y-4">
+            <form className="space-y-4 mt-8 px-6">
               <div>
                 <label htmlFor="name" className="block mb-2">
                   Your Name
@@ -76,7 +76,7 @@ const Contact = () => {
                   placeholder="Enter Your Message"
                 />
               </div>
-              <button className="bg-gradient-to-r from-red-600 to-blue-700 text-white hidden md:inline transform transition-transform duration-300 hover:scale-105 px-8 py-2 rounded-full">
+              <button className="bg-gradient-to-r from-red-600 to-blue-700 text-white md:inline transform transition-transform duration-300 hover:scale-105 px-8 py-2 rounded-full">
                 Send
               </button>
             </form>
