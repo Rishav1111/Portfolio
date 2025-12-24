@@ -45,11 +45,6 @@ const Navbar = () => {
           </a>
         </div>
 
-        {/* Desktop Connect Button - hidden on mobile */}
-        <button className="bg-gradient-to-r from-red-600 to-blue-700 text-white hidden lg:inline-block transform transition-transform duration-300 hover:scale-105 px-4 py-2 rounded-full">
-          Connect Me
-        </button>
-
         {/* Mobile Menu Button - visible only on mobile */}
         <button
           onClick={toggleMenu}
