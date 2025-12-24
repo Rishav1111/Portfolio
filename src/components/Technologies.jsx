@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import { DiMysql, DiRedis } from "react-icons/di";
 import { FaNodeJs } from "react-icons/fa";
 import { RiReactjsLine } from "react-icons/ri";
-import { SiExpress, SiMongodb } from "react-icons/si";
+import { SiExpress, SiMongodb, SiNextdotjs } from "react-icons/si";
 
 const Technologies = () => {
   // Animation function to provide different delays for each icon
@@ -36,6 +36,15 @@ const Technologies = () => {
           </span>
         </motion.div>
 
+        <motion.div
+          className="relative group p-4 cursor-pointer"
+          animate={getBounceAnimation(0.3)} 
+        >
+          <SiNextdotjs className="text-7xl text-cyan-400 transform transition-transform duration-300 hover:scale-110" />
+          <span className="absolute left-1/2 bottom-full mb-1 -translate-x-1/2 scale-100 bg-zinc-500 text-white font-bold text-sm px-2 py-1 rounded opacity-0 group-hover:opacity-100 group-hover:scale-100 transition-opacity duration-200">
+            NextJS
+          </span>
+        </motion.div>
        
         <motion.div
           className="relative group p-4 cursor-pointer"
