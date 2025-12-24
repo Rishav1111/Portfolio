@@ -1,5 +1,5 @@
 import React from "react";
-import HeroImage from "../assets/hero.JPG";
+import HeroImage from "../assets/hero.jpg";
 const Hero = () => {
   return (
     <div className="bg-black bg-[radial-gradient(circle_300px_at_50%_250px,#fbfbfb36,#000)] text-white text-center py-20">
