@@ -46,7 +46,8 @@ const Projects = () => {
               <img
                 src={project.image}
                 alt={project.name}
-                className="rounded-lg mb-4"
+                loading="lazy"
+                className="rounded-lg mb-4 w-full h-auto"
               />
               <h3 className="text-2xl font-bold mb-2">{project.name}</h3>
               <p className="text-gray-400 mb-4">{project.technologies}</p>

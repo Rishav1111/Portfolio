@@ -11,6 +11,12 @@ const Navbar = () => {
     setIsMenuOpen(false);
   };
 
+  const handleHomeClick = (e) => {
+    e.preventDefault();
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+    closeMenu();
+  };
+
   return (
     <nav className="bg-black text-white px-4 md:px-16 lg:px-24 sticky top-0 z-50">
       <div className="container py-3 flex justify-between items-center">
@@ -19,7 +25,7 @@ const Navbar = () => {
 
         {/* Desktop Navigation - hidden on mobile */}
         <div className="hidden lg:flex items-center space-x-6">
-          <a href="#home" className="hover:text-gray-400 transition-colors">
+          <a href="#home" onClick={handleHomeClick} className="hover:text-gray-400 transition-colors">
             Home
           </a>
           <a href="#about" className="hover:text-gray-400 transition-colors">
@@ -77,7 +83,7 @@ const Navbar = () => {
         <div className="px-4 py-4 space-y-4 bg-black border-t border-gray-800">
           <a
             href="#home"
-            onClick={closeMenu}
+            onClick={handleHomeClick}
             className="block hover:text-gray-400 transition-colors py-2"
           >
             Home

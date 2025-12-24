@@ -2,10 +2,11 @@ import React from "react";
 import HeroImage from "../assets/hero.jpg";
 const Hero = () => {
   return (
-    <div className="bg-black bg-[radial-gradient(circle_300px_at_50%_250px,#fbfbfb36,#000)] text-white text-center py-20">
+    <div id="home" className="bg-black bg-[radial-gradient(circle_300px_at_50%_250px,#fbfbfb36,#000)] text-white text-center py-20">
       <img
         src={HeroImage}
-        alt=""
+        alt="Rishav Shrestha"
+        loading="eager"
         className="mx-auto mb-8 w-48 h-48 rounded-full object-cover transform transition-transform duration-300 hover:scale-105"
       />
       <h1 className="text-4xl font-bold">

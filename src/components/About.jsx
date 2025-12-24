@@ -8,7 +8,8 @@ const About = () => {
         <div className="flex flex-col md:flex-row items-center md:space-x-12">
           <img
             src={AboutImg}
-            alt=""
+            alt="About Rishav Shrestha"
+            loading="lazy"
             className="w-72 h-80 rounded object-cover mb-8 md:mb-0"
           />
           <div className="flex-1">
